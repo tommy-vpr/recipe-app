@@ -1,6 +1,7 @@
 import express from "express";
 import favoritesRoutes from "./routes/favorites.js";
 import { ENV } from "./config/env.js";
+import "./config/cron.js";
 
 const app = express();
 const PORT = ENV.PORT || 5001;
